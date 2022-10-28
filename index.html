@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    >
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9WTLwRK2kSgW3ukCUsqlP1UJjJbt3UK9HUP0NPrnRTQ&s"
+    >
+    <title>Debounce</title>
+  </head>
+  <body>
+    <section class="hero is-danger is-fullheight">
+      <div class="hero-body">
+        <div class="column is-full">
+          <h1 class="title is-1">1s Debounce</h1>
+          <form action="#">
+            <label class="label has-text-white subtitle">
+              <span class="column p-0">
+                Debounced
+                <span class="has-text-success">value</span> is:
+                <span class="debounced-value has-text-primary"></span>
+              </span>
+              <span class="column p-0">
+                Debounced
+                <span class="has-text-info">this</span>.
+                <span class="has-text-success">
+                  value
+                </span> is:
+                <span class="debounced-this-value has-text-primary"></span>
+              </span>
+            </label>
+            <div class="controls">
+              <input
+                type="text"
+                class="input"
+                placeholder="Some value"
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
